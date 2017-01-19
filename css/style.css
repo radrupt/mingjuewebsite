@@ -20,7 +20,7 @@ textarea,input{font-family: Microsoft YaHei;}
     padding: 0 0px;
     background: white;
 }
-.head,.about,.solve,.advantage,.communicate,.try-contact{
+.head,.about,.solve,.advantage,.communicate,.try-contact,.query,.oneview{
     clear: both;
     background: #f1f1f1;
     overflow: hidden;
@@ -246,7 +246,59 @@ nav li:nth-child(n+1){
 .advantage img{
     width: 100%;
 }
-.communicate{padding-bottom: 0px}
+.communicate{padding-bottom: 0px;}
+.communicate>div{
+    width: 42%;
+    float: left;
+    position: relative;
+    height: 100%;
+}
+.communicate>div:first-child{width: 42%}
+.communicate>div:last-child{width: 58%;}
+.communicate>div>.sp_p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.communicate>div>.sp_p>img{
+    width:100%;
+    max-width: 360px;
+}
+.communicate>div>.sp_p>img:first-child{
+    position: static;
+    visibility: hidden;
+}
+.communicate>div>.sp_p>img:last-child{
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+}
+.communicate>div:last-child{
+    display: table;
+}
+.communicate>div:last-child>div{
+    text-align:center;
+    vertical-align: middle;
+    display:table-cell;
+    padding-right: 20%;
+}
+.oneview .title_img{
+    text-align: center;
+    width: 25%;
+    float:left;
+    margin: 0 auto;
+}
+.oneview .title_img:nth-child(3){float: right}
+.oneview .title_img:nth-child(4){float: right}
+.oneview .title_img>img{
+    margin-top: 16px;
+    width: 100%;
+}
+.oneview .title_img>span{
+    font-weight: 600;
+    color:black;
+    font-size: 22px;
+}
 .comm-left{width: 25%}
 .comm-center{width: 50%}
 .comm-right{width: 25%}
